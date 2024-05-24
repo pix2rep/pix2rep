@@ -1,4 +1,4 @@
-## Hi there 👋
+## Pix2Rep: self-supervised learning of dense image representations
 
 <!--
 **pix2rep/pix2rep** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
