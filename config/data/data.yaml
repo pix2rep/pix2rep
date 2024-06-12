@@ -1,0 +1,15 @@
+num_patients: 100
+training_split_ratio: 0.9
+batch_size: 16
+batch_size_CL: 8
+
+training_transform:
+  random_noise_std: 0.5
+  random_noise_p: 0.3
+  random_blur_std: 1.3
+  random_blur_p: 0.5
+  log_gamma: 0.05
+  random_gamma_p: 0.9
+  random_field_coef: 0.9
+  random_field_p: 0.75
+  random_invert_p: 0.35

@@ -1,0 +1,43 @@
+
+tqdm_disabled: False
+
+# Supervised Learning Parameters
+num_epochs: 200
+eval_frequency: 5
+n_channels: 1
+n_classes: 4
+
+# Contrastive Learning Parameters
+learning_rate_backbone: 4.7e-4 
+linear_probing_learning_rate_outconv: 7.6e-3 
+
+finetuning_learning_rate_backbone: 5.e-5
+finetuning_learning_rate_outconv: 1.e-2
+
+num_samples: 1000
+temperature: 0.53
+
+n_features_map: 1024
+n_features_map_mlp: 256
+projection_head_depth: 1
+inner_dim_1: 256
+# 'inner_dim_2': 256
+# 'inner_dim_3': 128
+
+is_rotated: True 
+is_cropped: True 
+is_flipped: True
+is_translation: False
+
+max_angle: 1.57079632679 #pi/2
+max_crop: 0.33 
+
+training_loader_CL: training_loader_CL
+validation_loader_CL: validation_loader_CL
+
+save_path_backbone: "/media/data/MSc_students_accounts/maxime/models/weights_backbone_CL_best_model.pth"
+save_path_outconv_layer: "/media/data/MSc_students_accounts/maxime/models/weights_outconv_layer_CL_best_model.pth" 
+
+weights_backbone_load_path: null  
+weights_ft_layer_load_path: null 
+
